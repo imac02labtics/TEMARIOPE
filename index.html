@@ -50,22 +50,14 @@
             padding: 20px;
             background-color: #fff;
         }
-        .footer {
-            background-color: #2E8B57;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
     </style>
 </head>
+
 <body>
     <div class="header">
-        <img src="https://th.bing.com/th/id/R.a9ec88c173eb5d4bf66d56006660860e?rik=Dpiwh3jCIbrN4Q&riu=http%3a%2f%2fitsoeh.edu.mx%2ffront%2fimages%2fbanner3.1.png&ehk=GVTKvOpKivSCK5kURwdEevNh%2fucgizvCtdHd6qbjoOU%3d&risl=&pid=ImgRaw&r=0" height="100px" weight="80px"></img>
+        <img src="https://th.bing.com/th/id/R.a9ec88c173eb5d4bf66d56006660860e?rik=Dpiwh3jCIbrN4Q&riu=http%3a%2f%2fitsoeh.edu.mx%2ffront%2fimages%2fbanner3.1.png&ehk=GVTKvOpKivSCK5kURwdEevNh%2fucgizvCtdHd6qbjoOU%3d&risl=&pid=ImgRaw&r=0" height="100px" weight="80px">
         <h1>Temario de Probabilidad y Estadística.</h1>
-        <p>Carmen Anahi Cornejo Lopez - 230110084 </p>
+        <p>Carmen Anahi Cornejo Lopez - 230110084</p>
     </div>
     <div class="nav">
         <a href="#home">Temas y sus conceptos.</a>
@@ -74,16 +66,12 @@
         <div class="content">
             <h2>Contenido Principal</h2>
             <p>Estos son los temas principales de la página: 
-                Tema 1:Estadística descriptiva.
-                Tema 2:Fundamentos de la Teoría de Probabilidad.
-                Tema 3:Variables Aleatorias.
+                Tema 1: Estadística descriptiva.
+                Tema 2: Fundamentos de la Teoría de Probabilidad.
+                Tema 3: Variables Aleatorias.
                 Tema 4: Distribuciones de Probabilidad.
             </p>
         </div>
-        
-    </div>
-    <div class="footer">
-       <p>Pie de página &copy; 2024</p>
     </div>
     <h1> Tema 1:Estadística descriptiva.</h1>
     <h2>1.1 Conceptos básicos de estadística</h2>
@@ -245,3 +233,70 @@
 <h2>4.8 Distribución F</h2>
 <p>Distribución utilizada para comparar dos varianzas y en el análisis de la varianza (ANOVA).</p>
 <img src="https://cdn.goconqr.com/uploads/media/image/46481468/desktop_80ce4999-8d16-43d6-a38d-78cd1cd6d462.gif" height="300px" weight="300px"></img>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuciones de Probabilidad</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Distribuciones de Probabilidad</h1>
+    <table>
+        <tr>
+            <th>Distribución</th>
+            <th>Fórmula</th>
+            <th>Cuándo usarla</th>
+        </tr>
+        <tr>
+            <td>Función Binomial</td>
+            <td>
+                <code>P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}</code><br>
+                Donde: <br>
+                <code>\binom{n}{k} = \frac{n!}{k!(n-k)!}</code>
+            </td>
+            <td>Se usa para modelar el número de éxitos en una secuencia de <code>n</code> ensayos independientes de Bernoulli, cada uno con una probabilidad de éxito <code>p</code>.</td>
+        </tr>
+        <tr>
+            <td>Distribución Hipergeométrica</td>
+            <td>
+                <code>P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}</code><br>
+                Donde: <br>
+                <code>\binom{N}{n} = \frac{N!}{n!(N-n)!}</code>
+            </td>
+            <td>Se usa para modelar el número de éxitos en una muestra de tamaño <code>n</code> extraída sin reemplazo de una población de tamaño <code>N</code> que contiene <code>K</code> éxitos.</td>
+        </tr>
+        <tr>
+            <td>Distribución de Poisson</td>
+            <td>
+                <code>P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}</code><br>
+                Donde: <br>
+                <code>\lambda</code> es la tasa promedio de ocurrencia de eventos.
+            </td>
+            <td>Se usa para modelar el número de eventos que ocurren en un intervalo de tiempo o espacio fijo cuando los eventos ocurren con una tasa promedio constante y de manera independiente.</td>
+        </tr>
+        <tr>
+            <td>Distribución Normal</td>
+            <td>
+                <code>f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}</code><br>
+                Donde: <br>
+                <code>\mu</code> es la media y <code>\sigma</code> es la desviación estándar.
+            </td>
+            <td>Se usa para modelar datos que tienden a agruparse alrededor de una media central, con una distribución simétrica y en forma de campana. Es aplicable cuando los datos son el resultado de muchos factores independientes.</td>
+        </tr>
+    </table>
